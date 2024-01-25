@@ -1,5 +1,5 @@
 const mapboxAccessToken = 'pk.eyJ1IjoibmNqOTIiLCJhIjoiY2tiMWJ2Y2VtMDBmYzJxcnVqdG4zajg0dSJ9.byYOj9RVssE-LJyaMUbrhQ';
-const apiUrlLocation = 'https://api.open-notify.org/iss-now.json';
+const apiUrlLocation = 'http://api.open-notify.org/iss-now.json';
 
 const mymap = L.map('map', {
     center: [0, 0],
@@ -15,8 +15,8 @@ const mymap = L.map('map', {
     tap: false
 });
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mymap);
-L.tileLayer(`https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/tiles/{z}/{x}/{y}?access_token=${mapboxAccessToken}`, {
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mymap);
+L.tileLayer(`http://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/tiles/{z}/{x}/{y}?access_token=${mapboxAccessToken}`, {
     tileSize: 512,
     zoomOffset: -1,
 }).addTo(mymap);
