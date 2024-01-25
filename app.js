@@ -1,5 +1,5 @@
 const mapboxAccessToken = 'pk.eyJ1IjoibmNqOTIiLCJhIjoiY2tiMWJ2Y2VtMDBmYzJxcnVqdG4zajg0dSJ9.byYOj9RVssE-LJyaMUbrhQ';
-const apiUrlLocation = 'http://api.open-notify.org/iss-now.json';
+const apiUrlLocation = 'https://api.open-notify.org/iss-now.json';
 
 const mymap = L.map('map', {
     center: [0, 0],
